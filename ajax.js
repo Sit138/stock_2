@@ -1,6 +1,13 @@
+function addTagP(i) {//добавляет на страницу <p> в наш <div>
+    var block = document.getElementById('blockWithPhone'),
+        p = document.createElement('p');
+    p.setAttribute("id", ""+i);
+    block.appendChild(p);
+}
+
 function openJson(file){
     var xhttp = new XMLHttpRequest(),
-        json, i, block, p;
+        json, i;
     xhttp.open('GET', file + '.json', true);
     xhttp.send();
     xhttp.onreadystatechange = function(){
@@ -10,10 +17,7 @@ function openJson(file){
                 document.getElementById('blockWithPhone').style.display = 'block';
                 json = eval('('+xhttp.responseText+')');
                 for(i = 0; i < json.phonebase.length; i++){
-                    block = document.getElementById('blockWithPhone');
-                    p = document.createElement('p');
-                    p.setAttribute("id", ""+i);
-                    block.appendChild(p);
+                    addTagP(i);
                     document.getElementById(""+i).innerHTML = json.phonebase[i].name + " "
                         + json.phonebase[i].surname + " " + json.phonebase[i].number;
                 }
@@ -29,14 +33,13 @@ function openJson(file){
 
 function openXML(file) {
     var xhttp = new XMLHttpRequest(),
-        textXml, phone, i, block, p,
+        textXml, phone, i,
         name, surname, number;
     xhttp.open('POST', file + '.xml', true);
     xhttp.send();
     xhttp.onreadystatechange = function() {
         try {
             if(xhttp.readyState == 4) {
-
                 document.getElementById('blockWithPhone').style.display = "block";
                 textXml = xhttp.responseXML;
                 phone = textXml.getElementsByTagName('phone');
@@ -44,10 +47,7 @@ function openXML(file) {
                 surname = textXml.getElementsByTagName('surname');
                 number = textXml.getElementsByTagName('number');
                 for(i = 0; i < phone.length; i++) {
-                    block = document.getElementById('blockWithPhone');
-                    p = document.createElement('p');
-                    p.setAttribute("id", ""+i);
-                    block.appendChild(p);
+                    addTagP(i);
                     document.getElementById(""+i).innerHTML = name[i].childNodes[0].nodeValue + " "
                         + surname[i].childNodes[0].nodeValue + " " + number[i].childNodes[0].nodeValue;
                 }
@@ -61,4 +61,3 @@ function openXML(file) {
 
     }
 }
-
