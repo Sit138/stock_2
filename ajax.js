@@ -5,7 +5,8 @@ function openJson(file){
     xhttp.send();
     xhttp.onreadystatechange = function(){
         try{
-            if(xhttp.readyState == 4 && xhttp.status == 200) {
+            if(xhttp.readyState == 4) {
+                console.log(xhttp.status);
                 document.getElementById('blockWithPhone').style.display = 'block';
                 json = eval('('+xhttp.responseText+')');
                 for(i = 0; i < json.phonebase.length; i++){
@@ -34,7 +35,8 @@ function openXML(file) {
     xhttp.send();
     xhttp.onreadystatechange = function() {
         try {
-            if(xhttp.readyState == 4 && xhttp.status == 200) {
+            if(xhttp.readyState == 4) {
+
                 document.getElementById('blockWithPhone').style.display = "block";
                 textXml = xhttp.responseXML;
                 phone = textXml.getElementsByTagName('phone');
@@ -53,6 +55,7 @@ function openXML(file) {
             }
         }
         catch (e) {
+            document.getElementById('blockWithPhone').style.display = 'none';
             alert("Data error...");
         }
 
