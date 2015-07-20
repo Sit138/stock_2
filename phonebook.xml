@@ -1,0 +1,48 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+<phonebook>
+<phone id = "1">
+<name>Александр</name>
+<surname>Иванов</surname>
+<number>+7 953 965 23 34</number>
+</phone>
+<phone id = "2">
+<name>Николай</name>
+<surname>Зотов</surname>
+<number>+7 970 635 22 14</number>
+</phone>
+<phone id = "3">
+<name>Елена</name>
+<surname>Родионова</surname>
+<number>+7 910 961 05 52</number>
+</phone>
+<phone id = "4">
+<name>Владимир</name>
+<surname>Владимиров</surname>
+<number>+7 950 535 52 15</number>
+</phone>
+<phone id = "5">
+<name>Анастасия</name>
+<surname>Хадюшина</surname>
+<number>+7 950 535 52 15</number>
+</phone>
+<phone id = "6">
+<name>Леонид</name>
+<surname>Ярмольник</surname>
+<number>+7 915 555 51 15</number>
+</phone>
+<phone id = "7">
+<name>Елена</name>
+<surname>Александрова</surname>
+<number>+7 563 555 22 12</number>
+</phone>
+<phone id = "8">
+<name>Михаил</name>
+<surname>Репин</surname>
+<number>+7 960 456 22 00</number>
+</phone>
+<phone id = "8">
+<name>Константин</name>
+<surname>Прокофьев</surname>
+<number>+7 915 445 62 23</number>
+</phone>
+</phonebook>

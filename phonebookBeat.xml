@@ -1,0 +1,33 @@
+﻿
+
+<phone id = "1">
+<name>Александр</name>
+<surname>Иванов</surname>
+<number>+7 953 965 23 34</number>
+</phone>
+<phone id = "2">
+<name>Николай</name>
+<surname>Зотов</surname>
+<number>+7 970 635 22 14</number>
+</phone>
+<phone id = "3">
+<name>Елена
+<surname>Родионова</surname>
+<number>+7 910 961 05 52</number>
+</phone>
+<phone id = "4">
+<name>Владимир</name>
+<surname>Владимиров</surname>
+<number>+7 950 535 52 15</number>
+
+<phone id = "5">
+<name>Анастасия</name>
+<surname>Хадюшина</surname>
+<number>+7 910 960 60 09</number>
+</phone>
+<phone id = "6">
+<name>Леонид</name>
+<surname>Ярмольник</surname>
+<number>+7 915 555 51 15</number>
+</phone>
+</phonebook>

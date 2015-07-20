@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Задание 2 - AJAX запросы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="button" onclick="openJson('phonebook')" value="Обработка JSON" class="but"></td>
+        <td><input type="button" onclick="openXML('phonebook')"  value="Обработка XML" class="but"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="openJson('phonebookBeat')" value="Доступ к битому JSON" class="but"></td>
+        <td><input type="button" onclick="openXML('phonebookBeat')"  value="Доступ к битому XML" class="but"></td>
+    </tr>
+</table>
+<div id="blockWithPhone" style="display: none">
+    <hr/>
+    <p>
+    <b>База телефонов</b>
+    </p>
+    <hr/>
+</div>
+<script src="ajax.js"></script>
+</body>
+</html>
